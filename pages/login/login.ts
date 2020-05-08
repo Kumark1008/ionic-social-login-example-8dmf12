@@ -40,25 +40,6 @@ export class LoginPage {
     }
   }
 
-  // phone form submission handler
-  smsLogin() {
-    AccountKit.init({
-        appId:"150126959048665", 
-        state:"loksatest123", 
-        version:"v1.1",
-        fbAppEventsEnabled:true,
-        redirect:""
-      }
-    );
-    var countryCode = document.getElementById("country_code").value;
-    var phoneNumber = document.getElementById("phone_number").value;
-    AccountKit.login(
-      'PHONE', 
-      {countryCode: countryCode, phoneNumber: phoneNumber}, // will use default values if not specified
-      this.loginCallback
-    );
-  }
-
 onLogin(form) {
     this.submitted = true;
 

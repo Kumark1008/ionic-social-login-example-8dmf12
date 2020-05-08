@@ -11,12 +11,7 @@
 				<button ion-button (click)="signInWithGoogle()" color="light" block>Login with Google</button>
 			</ion-col>
 		</ion-row>
-    <ion-row>
-      <input value="+91" id="country_code" />
-<input placeholder="phone number" id="phone_number"/>
-<button (click)="smsLogin();">Login via SMS</button>
-      </ion-row>
-		<!-- <ion-list>
+    <ion-list>
 			<ion-item>
 				<ion-label floating >Username</ion-label>
 				<ion-input [(ngModel)]="login.username" name="username" type="text" #username="ngModel" spellcheck="false" autocapitalize="off"
@@ -41,10 +36,8 @@
 			<ion-col>
 				<button ion-button (click)="onLogin(loginForm)" type="submit" block>Login</button>
 			</ion-col>
-			<ion-col>
-				<button ion-button (click)="onSignup()" color="light" block>Signup</button>
-			</ion-col>
-		</ion-row> -->
+		
+		</ion-row>
 	</form>
 
 </ion-content>
